@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAGR Calculator - Calculate Compound Annual Growth Rate 2026 | GrowthX</title>
+<meta name="description" content="Free CAGR Calculator - Calculate Compound Annual Growth Rate for Stocks, Mutual Funds, SIP, Business. 100% Free, No Watermark, Unlimited Usage. Best CAGR calculator worldwide.">
+<meta name="keywords" content="CAGR calculator, compound annual growth rate calculator, CAGR formula, stock CAGR calculator, mutual fund CAGR calculator, investment CAGR">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://growthx-cagr.pages.dev/">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+:root{--bg:#0a0a0a;--card:#151515;--card2:#1f1f1f;--lime:#d4ff32;--lime2:#b8e62e;--text:#e5e5e5;--muted:#8a8a8a;--border:#262626}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Space Grotesk',sans-serif}
+body{background:var(--bg);color:var(--text);line-height:1.6}
+header{background:rgba(10,10,10,0.8);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:16px 5%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:700;font-size:22px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-0.5px}
+.logo-dot{width:32px;height:32px;background:var(--lime);color:#000;display:grid;place-items:center;border-radius:8px;font-weight:700;transform:rotate(-6deg)}
+nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-weight:600;font-size:14px;transition:0.2s}
+nav a:hover{color:#fff}
+nav a.btn{background:#fff;color:#000;padding:10px 18px;border-radius:100px}
+.container{max-width:1120px;margin:0 auto;padding:24px 5%}
+.ad-box{background:var(--card);border:1px dashed var(--border);border-radius:16px;min-height:90px;display:flex;align-items:center;justify-content:center;margin:20px 0;overflow:hidden}
+@media(max-width:768px){.ad-box{min-height:70px}.d-hide{display:none}.m-show{display:block!important}}
+.m-show{display:none}
+.hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:24px;margin-top:10px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.tool-card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:28px}
+.tool-card h1{font-size:28px;line-height:1.1;letter-spacing:-1px}
+.tool-card h1 span{color:var(--lime)}
+.sub{color:var(--muted);font-size:14px;margin:8px 0 20px}
+.field{margin-bottom:18px}
+.field label{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);margin-bottom:8px;display:block;font-weight:600}
+.field input{width:100%;background:var(--card2);border:1px solid var(--border);color:#fff;padding:16px 18px;border-radius:14px;font-size:18px;font-weight:600;outline:none;transition:0.2s}
+.field input:focus{border-color:var(--lime);box-shadow:0 0 0 3px rgba(212,255,50,0.15)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.calc-btn{width:100%;background:var(--lime);color:#000;border:none;padding:18px;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;margin-top:6px;transition:0.2s}
+.calc-btn:hover{background:var(--lime2);transform:translateY(-1px)}
+.result-card{background:linear-gradient(180deg,#151515,#101010);border:1px solid var(--border);border-radius:24px;padding:28px;position:relative;overflow:hidden}
+.result-card::after{content:"";position:absolute;top:-80px;right:-80px;width:200px;height:200px;background:var(--lime);filter:blur(80px);opacity:0.15}
+.pill{display:inline-block;background:rgba(212,255,50,0.12);border:1px solid rgba(212,255,50,0.2);color:var(--lime);font-size:11px;padding:6px 12px;border-radius:100px;font-weight:700;letter-spacing:0.5px}
+.big-cagr{font-size:64px;font-weight:700;line-height:1;margin:16px 0;letter-spacing:-3px}
+.big-cagr small{font-size:24px}
+.badge-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.badge{background:var(--card2);border:1px solid var(--border);padding:14px;border-radius:14px}
+.badge span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:4px}
+.badge b{font-size:18px;color:#fff}
+.visual{margin-top:20px;background:var(--card2);border-radius:14px;padding:14px;border:1px solid var(--border)}
+.bar{height:8px;background:#262626;border-radius:100px;overflow:hidden;margin-top:8px}
+.bar-fill{height:100%;background:var(--lime);border-radius:100px;transition:1s}
+.content-card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:32px;margin-top:26px}
+.content-card h2{font-size:22px;margin:28px 0 12px;letter-spacing:-0.5px;color:#fff}
+.content-card h2:first-child{margin-top:0}
+.content-card p{color:#a3a3a3;font-size:15px;margin-bottom:14px;line-height:1.8}
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0}
+.faq-item b{color:#fff;display:block;margin-bottom:6px}
+footer{background:#0a0a0a;border-top:1px solid var(--border);padding:40px 5%;margin-top:40px;text-align:center}
+footer a{color:var(--muted);text-decoration:none;margin:0 12px;font-size:14px}
+footer a:hover{color:#fff}
+</style>
+</head>
+<body>
+<header>
+<a href="/" class="logo"><div class="logo-dot">G</div> GrowthX</a>
+<nav>
+<a href="/">Home</a>
+<a href="https://fixoraa.tech" class="btn" target="_blank">More Tools →</a>
+</nav>
+</header>
+
+<div class="container">
+<!-- TOP AD - PC BADA / MOBILE CHOTA -->
+<div class="ad-box">
+<div class="d-hide">
+<script>
+  atOptions = {
+    'key' : '4e68ac77881c17fe128a46565d9a4e8c',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+</div>
+<div class="m-show">
+<script>
+  atOptions = {
+    'key' : '4e68ac77881c17fe128a46565d9a4e8c',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+</div>
+</div>
+
+<div class="hero">
+<div class="tool-card">
+<div class="pill">● NO WATERMARK • NO SUBSCRIPTION • UNLIMITED</div>
+<h1>Calculate <span>CAGR</span> in Seconds</h1>
+<p class="sub">For Stocks, Mutual Funds, Business, Crypto. Exact compound annual growth rate.</p>
+
+<div class="grid2">
+<div class="field"><label>Initial Investment ($ / ₹)</label><input type="number" id="initial" value="100000"></div>
+<div class="field"><label>Final Value ($ / ₹)</label><input type="number" id="final" value="250000"></div>
+</div>
+<div class="grid2">
+<div class="field"><label>Duration (Years)</label><input type="number" id="years" value="5" step="0.5"></div>
+<div class="field"><label>OR Months (Optional)</label><input type="number" id="months" placeholder="e.g. 60"></div>
+</div>
+
+<button class="calc-btn" onclick="calcCAGR()">Calculate CAGR →</button>
+<p style="font-size:11px;color:var(--muted);text-align:center;margin-top:12px;">Formula: (EV/BV)^(1/n) - 1 • Used by Warren Buffett</p>
+</div>
+
+<div class="result-card">
+<div class="pill">LIVE RESULT</div>
+<div style="margin-top:12px;color:var(--muted);font-size:12px;letter-spacing:1px">YOUR CAGR</div>
+<div class="big-cagr" id="cagrOut">20.11<small>%</small></div>
+<div style="color:var(--muted);font-size:13px" id="absOut">Absolute Return: 150% • 2.5x Growth</div>
+
+<div class="badge-row">
+<div class="badge"><span>Total Profit</span><b id="profit">₹ 1,50,000</b></div>
+<div class="badge"><span>Yearly Growth</span><b id="yearly">₹ 30,000</b></div>
+<div class="badge"><span>Monthly CAGR</span><b id="monthlyCAGR">1.54%</b></div>
+<div class="badge"><span>Doubling Time</span><b id="double">3.6 Years</b></div>
+</div>
+
+<div class="visual">
+<div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted)"><span>Initial</span><span>Final</span></div>
+<div class="bar"><div class="bar-fill" id="barFill" style="width:40%"></div></div>
+</div>
+</div>
+</div>
+
+<!-- BOTTOM AD -->
+<div class="ad-box">
+<div data-banner-id="1501463"></div>
+</div>
+
+<!-- 1000+ WORDS SEO CONTENT -->
+<div class="content-card">
+<h2>What is CAGR Calculator? Complete Guide 2026</h2>
+<p>CAGR stands for Compound Annual Growth Rate. It is the most accurate way to measure investment growth over time. Unlike simple average return, CAGR shows you the true yearly compounding rate at which your money grew. Our GrowthX CAGR Calculator is 100% free, no watermark, no login, unlimited usage worldwide. Whether you are in India, USA, UK, Dubai, you can use this tool for stocks, mutual funds, SIP, crypto, business revenue, or even YouTube subscribers growth.</p>
+<p>For example, you invested Rs 1 Lakh in a mutual fund and after 5 years it became Rs 2.5 Lakh. Simple return is 150% total, but CAGR is 20.11% per year. This means your money grew at 20.11% yearly compounded. This is the number every professional investor uses. Warren Buffett's Berkshire Hathaway CAGR is 19.8% for 60 years, which made him billionaire.</p>
+
+<h2>CAGR Formula Explained with Example</h2>
+<p>CAGR Formula: CAGR = (Ending Value / Beginning Value)^(1 / Number of Years) - 1. In percentage: CAGR% = [(EV/BV)^(1/n) -1] *100. Our calculator does this automatically. If you invested $10,000 in Apple stock in 2020 and now it is $28,000 in 2026 (6 years), CAGR = (28000/10000)^(1/6)-1 = 18.69% per year. This is better than bank FD which gives 7%.</p>
+<p>Many people confuse CAGR with absolute return and simple average. Absolute return is just (Final-Initial)/Initial*100. For above example absolute is 150%. But CAGR gives you yearly rate. If two mutual funds both gave 150% in 5 years vs 3 years, their CAGR is different: 5-year CAGR 20.11%, 3-year CAGR 35.72%. So 3-year fund is better even though absolute same. That's why CAGR is rank #1 metric for comparison.</p>
+
+<h2>How to Use GrowthX CAGR Calculator?</h2>
+<p>Step 1: Enter Initial Investment - how much you started with. Step 2: Enter Final Value - how much you have now or after years. Step 3: Enter Duration in years, or months for short term. Our calculator auto-converts months to years. Click Calculate. You get CAGR%, total profit, monthly CAGR, doubling time, and growth multiple. You can calculate for any currency - Rupee, Dollar, Euro - result is in percentage so universal.</p>
+<p>Pro Tip: Use months field for less than 1 year. If you bought crypto for $1000 and after 8 months it became $1800, enter Initial 1000, Final 1800, Months 8, CAGR will be 154% annualized. This helps compare short term trades with long term investments.</p>
+
+<h2>Why GrowthX CAGR Calculator is Best Worldwide?</h2>
+<p>1. No Watermark Result: Screenshot and share on Instagram, YouTube without logo. 2. Unlimited: Calculate 500 times a day, no subscription. 3. Worldwide: Works for any country, any currency. 4. Accurate: Uses exact power formula with decimal years support (like 2.5 years). 5. Extra Metrics: Shows absolute return, profit, monthly CAGR, doubling time using Rule of 72. 6. SEO Optimized: Fast, mobile responsive, FAQ schema for Google rank 1.</p>
+<p>For Indian users, use this for: Stock CAGR (NSE/BSE), Mutual Fund CAGR, SIP CAGR, PPF vs Mutual Fund comparison, Business revenue CAGR (if revenue grew from 10L to 50L in 3 years, CAGR 71%). For US users: 401k growth, S&P 500 CAGR, Crypto CAGR.</p>
+
+<h2>CAGR vs XIRR vs Absolute Return - Difference</h2>
+<p>CAGR is for one-time lump sum investment. XIRR is for SIP/multiple cashflows. Absolute return is total return without time. For example, you invested 1L, got 2L in 5 years: Absolute 100%, CAGR 14.87%. If you invested monthly SIP, you must use XIRR not CAGR. But for comparing two stocks or two businesses, CAGR is king. Our More Tools at fixoraa.tech has XIRR and SIP calculators also.</p>
+<p>Good CAGR benchmarks: 8-12% is good for mutual funds, 15%+ is excellent for stocks, 20%+ is outstanding (only top 1% investors), 50%+ is usually risky or short term luck. If someone says they give 5% monthly, that's 79.58% CAGR annually - very high risk, likely scam.</p>
+
+<h2>Frequently Asked Questions (FAQ)</h2>
+<div class="faq-item"><b>Q1. What is a good CAGR?</b><br>For stocks, 15%+ CAGR for 10 years is excellent. For mutual funds, 12-15% is very good. For business revenue, 20-30% CAGR is strong growth. Bank FD gives 7% CAGR.</div>
+<div class="faq-item"><b>Q2. How to calculate CAGR in Excel?</b><br>Formula in Excel: = (Ending Value / Beginning Value)^(1/Years) -1. Or use RATE function: =RATE(years,0,-beginning,ending). Our calculator does same but faster.</div>
+<div class="faq-item"><b>Q3. Is CAGR same as interest rate?</b><br>Yes, CAGR is effective annual interest rate with compounding. If bank says 7% compounded yearly, CAGR is 7%. But CAGR is used for volatile assets like stocks to smooth returns.</div>
+<div class="faq-item"><b>Q4. Can CAGR be negative?</b><br>Yes, if final value is less than initial, CAGR will be negative. Example: 100k to 80k in 2 years = -10.55% CAGR, meaning you lost 10.55% yearly.</div>
+<div class="faq-item"><b>Q5. Is this CAGR calculator free?</b><br>Yes, GrowthX CAGR Calculator is 100% free worldwide, no watermark, no subscription, unlimited usage forever. Made for investors globally.</div>
+</div>
+</div>
+
+<footer>
+<p>© 2026 GrowthX - Free CAGR Calculator for Investors</p>
+<div style="margin-top:12px">
+<a href="/terms">Terms</a><a href="/privacy">Privacy</a><a href="https://fixoraa.tech">More Tools</a><a href="/">Home</a>
+</div>
+<p style="margin-top:10px;font-size:11px;color:#525252">Disclaimer: For educational purpose. Not financial advice. Past CAGR does not guarantee future returns.</p>
+</footer>
+
+<script>
+function calcCAGR(){
+let bv=parseFloat(document.getElementById('initial').value)||0;
+let ev=parseFloat(document.getElementById('final').value)||0;
+let y=parseFloat(document.getElementById('years').value)||0;
+let m=parseFloat(document.getElementById('months').value)||0;
+if(m>0 && y===0){ y=m/12; }
+if(m>0 && y>0){ y = y + m/12; }
+if(bv<=0 || ev<=0 || y<=0){ return; }
+let cagr = (Math.pow(ev/bv, 1/y)-1)*100;
+let absRet = ((ev-bv)/bv)*100;
+let profit = ev-bv;
+let monthly = (Math.pow(ev/bv, 1/(y*12))-1)*100;
+let doubleTime = cagr>0 ? 72/cagr : 0;
+
+document.getElementById('cagrOut').innerHTML = (cagr>=0?cagr.toFixed(2):cagr.toFixed(2))+'<small>%</small>';
+document.getElementById('absOut').innerText = `Absolute Return: ${absRet.toFixed(1)}% • ${(ev/bv).toFixed(2)}x Growth`;
+document.getElementById('profit').innerText = '₹ '+Math.round(profit).toLocaleString('en-IN');
+document.getElementById('yearly').innerText = '₹ '+Math.round(profit/y).toLocaleString('en-IN');
+document.getElementById('monthlyCAGR').innerText = monthly.toFixed(2)+'%';
+document.getElementById('double').innerText = doubleTime?doubleTime.toFixed(1)+' Years':'-';
+document.getElementById('barFill').style.width = Math.min(95, (bv/ev)*100 + 30)+'%';
+}
+calcCAGR();
+document.querySelectorAll('input').forEach(i=>i.addEventListener('input',calcCAGR));
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"What is a good CAGR?","acceptedAnswer":{"@type":"Answer","text":"15%+ for stocks, 12-15% for mutual funds is excellent."}},
+{"@type":"Question","name":"Is CAGR calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes 100% free, no watermark, unlimited usage worldwide."}}
+]
+}
+</script>
+</body>
+</html>
